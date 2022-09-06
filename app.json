@@ -1,13 +1,13 @@
 {
     "name": "Telegram Video Merge Bot",
-    "description": "A Telegram Video Merge Bot in Pyrogram by @AbirHasan2005",
+    "description": "A Telegram Video Merge Bot ",
     "keywords": [
         "telegram",
         "video",
         "merge",
         "bot"
     ],
-    "repository": "https://github.com/AbirHasan2005/VideoMerge-Bot",
+    "repository": "https://github.com/Hosseinsavior/VideoMerge-Bot",
     "website": "https://telegram.dog/AbirHasan2005",
     "success_url": "https://t.me/AH_VideoMergeBot",
     "env": {
@@ -44,7 +44,7 @@
         },
         "MAX_VIDEOS": {
             "description": "Max Videos Allowed to Merge. Don't put more than 15.",
-            "value": "5"
+            "value": "10"
         },
         "SESSION_NAME": {
             "description": "Any Session Name of Bot",
