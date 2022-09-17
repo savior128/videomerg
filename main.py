@@ -56,11 +56,11 @@ async def start_handler(bot: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer - @Savior_128", url="https://t.me/Savior_128")],
-                [InlineKeyboardButton("Support Channel", url="https://t.me/danisooper"),
-                 InlineKeyboardButton("Bots Channel", url="https://t.me/danisooper")],
-                [InlineKeyboardButton("Open Settings", callback_data="openSettings")],
-                [InlineKeyboardButton("Close", callback_data="closeMeh")]
+                [InlineKeyboardButton("𝐷𝑒𝑣𝑒𝑙𝑜𝑝𝑒𝑟 - 𝑆𝑎𝑣𝑖𝑜𝑟_128", url="https://t.me/Savior_128")],
+                [InlineKeyboardButton("𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐶ℎ𝑎𝑛𝑛𝑒𝑙", url="https://t.me/danisooper"),
+                 InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="FileToLinki_bot.t.me")],
+                [InlineKeyboardButton("𝑂𝑝𝑒𝑛 𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠", callback_data="openSettings")],
+                [InlineKeyboardButton("𝐶𝑙𝑜𝑠𝑒", callback_data="closeMeh")]
             ]
         )
     )
@@ -93,7 +93,7 @@ async def videos_handler(bot: Client, m: Message):
         await m.reply_text(f"Sorry Sir,\nNo Flooding Allowed!\nSend Video After `{str(sleepTime)}s` !!", quote=True)
     else:
         editable = await m.reply_text("Please Wait ...", quote=True)
-        MessageText = "Okay,\nNow Send Me Next Video or Press **Merge Now** Button!"
+        MessageText = "🇴 🇰 ,\n𝙉𝙤𝙬 𝙎𝙚𝙣𝙙 𝙈𝙚 𝙉𝙚𝙭𝙩 𝙑𝙞𝙙𝙚𝙤 𝙤𝙧 𝙋𝙧𝙚𝙨𝙨 𝙈𝙚𝙧𝙜𝙚 𝙉𝙤𝙬 𝘽𝙪𝙩𝙩𝙤𝙣!"
         if QueueDB.get(m.from_user.id, None) is None:
             QueueDB.update({m.from_user.id: []})
         if (len(QueueDB.get(m.from_user.id)) >= 0) and (len(QueueDB.get(m.from_user.id)) <= Config.MAX_VIDEOS):
@@ -104,9 +104,9 @@ async def videos_handler(bot: Client, m: Message):
                 FormtDB.update({m.from_user.id: media.file_name.rsplit(".", 1)[-1].lower()})
             await asyncio.sleep(Config.TIME_GAP)
             if len(QueueDB.get(m.from_user.id)) == Config.MAX_VIDEOS:
-                MessageText = "Okay Unkil, Now Just Press **Merge Now** Button Plox!"
+                MessageText = "𝙊𝙠𝙖𝙮 , 𝙉𝙤𝙬 𝙅𝙪𝙨𝙩 𝙋𝙧𝙚𝙨𝙨 𝙈𝙚𝙧𝙜𝙚 𝙉𝙤𝙬 𝘽𝙪𝙩𝙩𝙤𝙣 𝙋𝙡𝙤𝙭!"
             markup = await MakeButtons(bot, m, QueueDB)
-            await editable.edit(text="Your Video Added to Queue!")
+            await editable.edit(text="𝒀𝒐𝒖𝒓 𝑽𝒊𝒅𝒆𝒐 𝑨𝒅𝒅𝒆𝒅 𝒕𝒐 𝑸𝒖𝒆𝒖𝒆!")
             reply_ = await m.reply_text(
                 text=MessageText,
                 reply_markup=InlineKeyboardMarkup(markup),
@@ -116,7 +116,7 @@ async def videos_handler(bot: Client, m: Message):
         elif len(QueueDB.get(m.from_user.id)) > Config.MAX_VIDEOS:
             markup = await MakeButtons(bot, m, QueueDB)
             await editable.edit(
-                text=f"Sorry Unkil,\nMax {str(Config.MAX_VIDEOS)} Videos Allowed to Merge Together!\nPress **Merge Now** Button Now!",
+                text=f"Sorry Unkil,\nMax {str(Config.MAX_VIDEOS)} ᴠɪᴅᴇᴏꜱ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴍᴇʀɢᴇ ᴛᴏɢᴇᴛʜᴇʀ!\nᴘʀᴇꜱꜱ **ᴍᴇʀɢᴇ ɴᴏᴡ** ʙᴜᴛᴛᴏɴ ɴᴏᴡ!",
                 reply_markup=InlineKeyboardMarkup(markup)
             )
 
@@ -363,7 +363,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - @Savior_128", url="https://t.me/Savior_128"), InlineKeyboardButton("Support Channel", url="https://t.me/danisooper")], [InlineKeyboardButton("Bots Channel", url="https://t.me/danisooper")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - Savior_128", url="https://t.me/Savior_128"), InlineKeyboardButton("Support Channel", url="https://t.me/danisooper")], [InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="FileToLinki_bot.t.me")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
