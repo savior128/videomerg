@@ -32,7 +32,7 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                     [
                         [InlineKeyboardButton("Developer - @Savior_128", url="https://t.me/Savior_128")],
                         [InlineKeyboardButton("Support Channel", url="https://t.me/danisooper"),
-                         InlineKeyboardButton("Bots Channel", url="https://t.me/Savior128_bot")]
+                         InlineKeyboardButton("Other Bot", url="https://t.me/Siskiuploaderbot")]
                     ]
                 )
             )
@@ -53,7 +53,7 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                     [
                         [InlineKeyboardButton("Developer - @Savior_128", url="https://t.me/Savior_128")],
                         [InlineKeyboardButton("Support Channel", url="https://t.me/danisooper"),
-                         InlineKeyboardButton("Bots Channel", url="https://t.me/Savior128_bot")]
+                         InlineKeyboardButton("other bot", url="https://t.me/Siskiuploaderbot")]
                     ]
                 )
             )
