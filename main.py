@@ -58,7 +58,7 @@ async def start_handler(bot: Client, m: Message):
             [
                 [InlineKeyboardButton("𝐷𝑒𝑣𝑒𝑙𝑜𝑝𝑒𝑟 - 𝑆𝑎𝑣𝑖𝑜𝑟_128", url="https://t.me/Savior_128")],
                 [InlineKeyboardButton("𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐶ℎ𝑎𝑛𝑛𝑒𝑙", url="https://t.me/danisooper"),
-                 InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="FileToLinki_bot.t.me")],
+                 InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="Siskiuploaderbot.t.me")],
                 [InlineKeyboardButton("𝑂𝑝𝑒𝑛 𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠", callback_data="openSettings")],
                 [InlineKeyboardButton("𝐶𝑙𝑜𝑠𝑒", callback_data="closeMeh")]
             ]
@@ -363,7 +363,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - Savior_128", url="https://t.me/Savior_128"), InlineKeyboardButton("Support Channel", url="https://t.me/danisooper")], [InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="FileToLinki_bot.t.me")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - Savior_128", url="https://t.me/Savior_128"), InlineKeyboardButton("Support Channel", url="https://t.me/danisooper")], [InlineKeyboardButton("𝑂𝑡ℎ𝑒𝑟 𝐵𝑜𝑡", url="Siskiuploaderbot.t.me")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
@@ -433,7 +433,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         if (QueueDB.get(cb.from_user.id, None) is None) or (QueueDB.get(cb.from_user.id) == []):
             await cb.answer("Sorry Unkil, Your Queue is Empty!", show_alert=True)
             return
-        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/[@Savior_128]_Merged.{FormtDB.get(cb.from_user.id).lower()}"
+        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/@Savior_128_Merged.{FormtDB.get(cb.from_user.id).lower()}"
         if cb.data.split("_", 1)[-1] == "Yes":
             await cb.message.edit("Okay Unkil,\nSend me new file name!")
             try:
