@@ -38,7 +38,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789",
-               "value":"-1001764670025"
+               "value":"-1001788952875"
         },
         "DOWN_PATH": {
             "description": "Files download path. You can keep default. Should not end with '/'",
