@@ -14,7 +14,7 @@ This is very simple Telegram Videos Merge Bot . Using FFmpeg for Merging Videos.
 ### Deploy to Heroku:
 Just Press Below Button to Deploy!
 
-[![Deploy](https://www.koyeb.com/deploy/button.svg)](https://koyeb.com/deploy?template=https://github.com/Hosseinsavior/VideoMerge-Bot)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?...)
 
 ### Support Group:
 <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
