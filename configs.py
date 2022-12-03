@@ -12,7 +12,7 @@ class Config(object):
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
     DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
     TIME_GAP = int(os.environ.get("TIME_GAP", 5))
-    MAX_VIDEOS = int(os.environ.get("MAX_VIDEOS", 10))
+    MAX_VIDEOS = int(os.environ.get("MAX_VIDEOS", 4))
     STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME")
     STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
     MONGODB_URI = os.environ.get("MONGODB_URI")
