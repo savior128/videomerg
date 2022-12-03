@@ -1,1 +1,1 @@
-koyeb service redeploy nervous-constanta/videomerge-bot
+worker: python3.10.8 main.py
