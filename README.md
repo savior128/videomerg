@@ -19,6 +19,8 @@ Just Press Below Button to Deploy!
 ### Support Group:
 <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/1jKLr4)
+
 ### Video Tutorial:
 [![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://www.youtube.com/watch?v=m4r_SHySGYo)
 
