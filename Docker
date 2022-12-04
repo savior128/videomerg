@@ -2,7 +2,7 @@ name: Deploy to Koyeb
 on: [push]
 
 env:
-  GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+  GHCR_TOKEN: ${{ wpopeft8cmux8nduirb2riga5zuzpixtypp3tzjtr3u01swhsjfe9gs9n8790jyd }}
 
 jobs:
   build:
