@@ -9,4 +9,4 @@ aiofiles
 psutil
 pyromod
 humanfriendly
-https://git.ffmpeg.org/ffmpeg-web.git
+ffmpeg
